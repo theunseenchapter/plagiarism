@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AI Plagiarism Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-search-plus me-2"></i>
+                AI Plagiarism Detector
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center mb-5">
+                    <i class="fas fa-info-circle text-primary me-3"></i>
+                    About Our AI Plagiarism Detector
+                </h1>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="text-primary">
+                            <i class="fas fa-brain me-2"></i>
+                            How It Works
+                        </h3>
+                        <p class="lead">
+                            Our plagiarism detector uses advanced Natural Language Processing (NLP) techniques 
+                            and machine learning algorithms to analyze single texts for plagiarism indicators.
+                        </p>
+                        <p>
+                            The system employs multiple sophisticated approaches to detect potential copying:
+                        </p>
+                        <ul>
+                            <li><strong>Pattern Recognition:</strong> Identifies suspicious patterns that commonly appear in copied content</li>
+                            <li><strong>Sentence Structure Analysis:</strong> Detects unusual sentence lengths and structures that may indicate copying</li>
+                            <li><strong>Academic Phrase Detection:</strong> Identifies overuse of common academic phrases and expressions</li>
+                            <li><strong>Text Statistics Analysis:</strong> Analyzes word diversity, sentence complexity, and other linguistic markers</li>
+                            <li><strong>Content Source Indicators:</strong> Looks for references, citations, and source-related keywords</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="text-success">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Features
+                        </h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-star text-warning me-2"></i>Single-text analysis</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Pattern recognition</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Structural analysis</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Risk assessment</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-star text-warning me-2"></i>Phrase detection</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Text statistics</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Modern interface</li>
+                                    <li><i class="fas fa-star text-warning me-2"></i>Instant results</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="text-info">
+                            <i class="fas fa-cogs me-2"></i>
+                            Technology Stack
+                        </h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Backend:</h5>
+                                <ul>
+                                    <li>Python Flask</li>
+                                    <li>NLTK (Natural Language Toolkit)</li>
+                                    <li>Scikit-learn</li>
+                                    <li>NumPy</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Frontend:</h5>
+                                <ul>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>Bootstrap 5</li>
+                                    <li>JavaScript (ES6)</li>
+                                    <li>Font Awesome Icons</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="text-warning">
+                            <i class="fas fa-shield-alt me-2"></i>
+                            Similarity Levels
+                        </h3>
+                        <div class="row">
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="badge bg-success p-3 w-100">
+                                    <h5 class="mb-1">Very Low</h5>
+                                    <small>0-24%</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="badge bg-info p-3 w-100">
+                                    <h5 class="mb-1">Low</h5>
+                                    <small>25-49%</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="badge bg-warning p-3 w-100">
+                                    <h5 class="mb-1">Medium</h5>
+                                    <small>50-79%</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center mb-3">
+                                <div class="badge bg-danger p-3 w-100">
+                                    <h5 class="mb-1">High</h5>
+                                    <small>80-100%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="text-danger">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Important Notes
+                        </h3>
+                        <div class="alert alert-warning">
+                            <ul class="mb-0">
+                                <li>This tool analyzes text for plagiarism indicators, not definitive plagiarism</li>
+                                <li>Results should be interpreted by knowledgeable individuals</li>
+                                <li>High scores may indicate potential issues that require manual review</li>
+                                <li>Academic phrases and technical terms may trigger false positives</li>
+                                <li>Always combine automated detection with human judgment</li>
+                                <li>This tool is designed for educational and research purposes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="/" class="btn btn-primary btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        Back to Detector
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">
+                <i class="fas fa-brain me-2"></i>
+                AI Plagiarism Detector - Powered by Natural Language Processing
+            </p>
+            <small class="text-muted">Built with TF-IDF, Cosine Similarity, and NLTK</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
